@@ -1,3 +1,4 @@
+import 'package:auto_orientation/auto_orientation.dart';
 import 'package:chewie/chewie.dart';
 import 'package:chewie/src/chewie_player.dart';
 import 'package:flutter/cupertino.dart';
@@ -47,7 +48,7 @@ class _ChewieDemoState extends State<ChewieDemo> {
             builder: (BuildContext context, Widget child) {
               return VideoScaffold(
                 child: Scaffold(
-                  resizeToAvoidBottomPadding: false,
+                  resizeToAvoidBottomInset: false,
                   body: Container(
                     alignment: Alignment.center,
                     color: Colors.black,
